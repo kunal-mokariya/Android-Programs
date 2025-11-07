@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("");
         tv.setText(temp[0].toString());
 
-
-
             b2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -67,6 +65,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
-
     }
 }
