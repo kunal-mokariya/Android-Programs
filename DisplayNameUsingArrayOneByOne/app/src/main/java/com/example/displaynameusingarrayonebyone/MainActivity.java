@@ -1,5 +1,10 @@
 package com.example.displaynameusingarrayonebyone;
 
+import static android.net.NetworkCapabilities.*;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_NOT_METERED;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_TEMPORARILY_NOT_METERED;
+
+import android.net.NetworkCapabilities;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -41,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if((len-1)>i)
                     {
+                       
                         i++;
                         tv.setText("");
                         tv.setText(temp[i]);
