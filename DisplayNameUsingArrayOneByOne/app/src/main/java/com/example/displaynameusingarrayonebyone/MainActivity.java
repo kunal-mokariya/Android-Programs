@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tv;
     Button b1,b2;
+    int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         b1 = findViewById(R.id.button);
         b2 = findViewById(R.id.button2);
         String[] temp = getResources().getStringArray(R.array.my);
-        int[] i = {0};
+
         int len = temp.length;
         tv.setText("");
         tv.setText(temp[0].toString());
@@ -38,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
             b2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(len>=(i[0]+2) && (i[0])>=0)
+                    if((len-1)>i)
                     {
-                        i[0]++;
+                        i++;
                         tv.setText("");
-                        String abv = String.valueOf(len);
-                        tv.setText(temp[i[0]]);
+                        tv.setText(temp[i]);
                     }
                     else
                     {
@@ -54,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(i[0]>0) {
-                        i[0]--;
+                    if(i>0) {
+                        i--;
                         tv.setText("");
-                        tv.setText(temp[i[0]].toString());
+                        tv.setText(temp[i].toString());
                     }
                     else
                     {
