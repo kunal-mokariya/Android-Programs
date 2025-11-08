@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView iv;
     Button b1,b2;
+    int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         });
         iv = findViewById(R.id.imageView);
         int[] img = {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e};
-        int[] i = {0};
         int len = img.length;
         b2 = findViewById(R.id.button2);
         b1 = findViewById(R.id.button);
@@ -36,11 +36,10 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(len>=(i[0]+2) && (len>=0))
+                if(len>(i+1))
                 {
-                    i[0]++;
-                    iv.setImageResource(img[i[0]]);
-
+                    i++;
+                    iv.setImageResource(img[i]);
                 }
                 else
                 {
@@ -51,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(i[0]>0)
+                if(i>0)
                 {
-                    i[0]--;
-                    iv.setImageResource(img[i[0]]);
+                    i--;
+                    iv.setImageResource(img[i]);
 
                 }
                 else
