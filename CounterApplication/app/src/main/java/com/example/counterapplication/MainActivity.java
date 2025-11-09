@@ -39,67 +39,75 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                    i--;
-                    tv1.setText("");
-                    if ((i >= 0 && i <= 100) ||(i <= 0 && i >= -100)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF5297FF);
+                    if(i>=-99999) {
+                        i--;
+                        tv1.setText("");
+                        if ((i >= 0 && i <= 100) || (i <= 0 && i >= -100)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF5297FF);
+                        }
+                        if ((i >= 101 && i <= 200) || (i <= -101 && i >= -200)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF3BE5FF);
+                        }
+                        if (i >= 201 && i <= 300 || (i <= -201 && i >= -300)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0x29FF62FF);
+                        }
+                        if (i >= 301 && i <= 400 || (i <= -301 && i >= -400)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xB5FF54FF);
+                        }
+                        if (i >= 401 && i <= 500 || (i <= -401 && i >= -500)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xB5FF54FF);
+                        }
+                        if (i >= 501 || i <= -501) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF4A74FF);
+                        }
                     }
-                    if ((i >= 101 && i <= 200) ||(i <= -101 && i >= -200)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF3BE5FF);
+                    else
+                    {
+                        Toast.makeText(MainActivity.this, "Please Click On Reset Button", Toast.LENGTH_SHORT).show();
                     }
-                    if (i >= 201 && i <= 300||(i <= -201 && i >= -300)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0x29FF62FF);
-                    }
-                    if (i >= 301 && i <= 400||(i <= -301 && i >= -400)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xB5FF54FF);
-                    }
-                    if (i >= 401 && i <= 500||(i <= -401 && i >= -500)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xB5FF54FF);
-                    }
-                    if (i >= 501 || i<=-501) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF4A74FF);
-                    }
-
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                    i++;
-                    tv1.setText("");
-                    if ((i >= 0 && i <= 100)|| (i<=0 && i>=-100)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF5297FF);
+                    if(i<=99999) {
+                        i++;
+                        tv1.setText("");
+                        if ((i >= 0 && i <= 100) || (i <= 0 && i >= -100)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF5297FF);
+                        }
+                        if ((i >= 101 && i <= 200) || (i <= -101 && i >= -200)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF3BE5FF);
+                        }
+                        if ((i >= 201 && i <= 300) || (i <= -201 && i >= -300)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0x29FF62FF);
+                        }
+                        if ((i >= 301 && i <= 400) || (i <= -401 && i >= -400)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xB5FF54FF);
+                        }
+                        if ((i >= 401 && i <= 500) || (i <= -401 && i >= -500)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xB5FF54FF);
+                        }
+                        if ((i >= 501) || (i <= -501)) {
+                            tv1.setText(String.valueOf(i));
+                            tv1.setBackgroundColor(0xFF4A74FF);
+                        }
                     }
-                    if ((i >= 101 && i <= 200) || (i<=-101 && i>=-200)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF3BE5FF);
+                    else
+                    {
+                        Toast.makeText(MainActivity.this, "Please Click On Reset Button", Toast.LENGTH_SHORT).show();
                     }
-                    if ((i >= 201 && i <= 300) || (i<=-201 && i>=-300)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0x29FF62FF);
-                    }
-                    if ((i >= 301 && i <= 400) || (i<=-401 && i>=-400)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xB5FF54FF);
-                    }
-                    if ((i >= 401 && i <= 500) || (i<=-401 && i>=-500)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xB5FF54FF);
-                    }
-                    if ((i >= 501) || (i<=-501)) {
-                        tv1.setText(String.valueOf(i));
-                        tv1.setBackgroundColor(0xFF4A74FF);
-                    }
-
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
