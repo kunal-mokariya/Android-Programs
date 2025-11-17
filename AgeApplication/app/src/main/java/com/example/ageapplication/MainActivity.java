@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 int month =Integer.parseInt(txt2.getText().toString());
                 int year = Integer.parseInt(txt3.getText().toString());
 
-                LocalDate date1 = of(year,month,date);
+                LocalDate date1 = LocalDate.of(year,month,date);
                 LocalDate lt = LocalDate.now();
 
                 Period p = Period.between(date1,lt);

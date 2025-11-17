@@ -21,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     int multi = 1;
     int div = 1;
+    int mod = 1;
     int task = 0;
+
     int at = 0;
     int st = 0;
     int mt = 0;
     int dt = 0;
+    int md = 0;
+
     String bb1 = "";
     String bb2 = "";
     String bb3 = "";
@@ -66,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         b16 = findViewById(R.id.button12);
         b15 = findViewById(R.id.button8);
         b14 = findViewById(R.id.button4);
+        b13 = findViewById(R.id.button);
+        b12 = findViewById(R.id.button2);
+        b11 = findViewById(R.id.button3);
 
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 if(task==1)
                 {
                     bb1 = bb1+"1";
-                    tv1.setText(bb1);
+                    txt = txt+bb1;
+                    tv1.setText(txt);
                 }
                 else
                 {
@@ -90,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
                 if(task==1)
                 {
                     bb2 = bb2+"2";
-                    tv1.setText(bb2);
+                    txt = txt+bb2;
+                    tv1.setText(txt);
                 }
                 else
                 {
@@ -207,6 +216,7 @@ public class MainActivity extends AppCompatActivity {
         b0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(task==1)
                 {
                     bb0 = bb0+"0";
@@ -217,6 +227,30 @@ public class MainActivity extends AppCompatActivity {
                     txt = txt + "0";
                     tv1.setText(txt);
                 }
+
+            }
+        });
+        b11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mt = 0;
+                dt = 0;
+                md = 1;
+                mod = mod+ Integer.parseInt(tv1.getText().toString());
+                tv1.setText("");
+                task = 1;
+                st = 0;
+                at = 0;
+                bb1 = "";
+                bb2 = "";
+                bb3 = "";
+                bb4 = "";
+                bb5 = "";
+                bb6 = "";
+                bb7 = "";
+                bb8 = "";
+                bb9 = "";
+                bb0 = "";
             }
         });
         b14.setOnClickListener(new View.OnClickListener() {
@@ -224,7 +258,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mt = 0;
                 dt = 1;
-                div = Integer.parseInt(tv1.getText().toString());
+                md = 0;
+                div = div+Integer.parseInt(tv1.getText().toString());
                 tv1.setText("");
                 task = 1;
                 st = 0;
@@ -246,11 +281,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mt = 1;
                 dt = 0;
-                multi = Integer.parseInt(tv1.getText().toString());
+                multi = multi+ Integer.parseInt(tv1.getText().toString());
                 tv1.setText("");
                 task = 1;
                 st = 0;
                 at = 0;
+                md = 0;
                 bb1 = "";
                 bb2 = "";
                 bb3 = "";
@@ -261,6 +297,7 @@ public class MainActivity extends AppCompatActivity {
                 bb8 = "";
                 bb9 = "";
                 bb0 = "";
+
             }
         });
         b16.setOnClickListener(new View.OnClickListener() {
@@ -269,20 +306,12 @@ public class MainActivity extends AppCompatActivity {
                 at = 0;
                 mt = 0;
                 dt = 0;
-                sub = Integer.parseInt(tv1.getText().toString());
-                tv1.setText("");
+                md = 0;
+                sub = sub+Integer.parseInt(tv1.getText().toString());
+                txt = "";
                 task = 1;
                 st = 1;
-                bb1 = "";
-                bb2 = "";
-                bb3 = "";
-                bb4 = "";
-                bb5 = "";
-                bb6 = "";
-                bb7 = "";
-                bb8 = "";
-                bb9 = "";
-                bb0 = "";
+
             }
         });
         b17.setOnClickListener(new View.OnClickListener() {
@@ -291,20 +320,13 @@ public class MainActivity extends AppCompatActivity {
                 st = 0;
                 mt = 0;
                 dt = 0;
-                addition = Integer.parseInt(tv1.getText().toString());
-                tv1.setText("");
+                md = 0;
+                addition = addition + Integer.parseInt(tv1.getText().toString());
+                txt = "";
                 task = 1;
                 at = 1;
-                bb1 = "";
-                bb2 = "";
-                bb3 = "";
-                bb4 = "";
-                bb5 = "";
-                bb6 = "";
-                bb7 = "";
-                bb8 = "";
-                bb9 = "";
-                bb0 = "";
+
+
             }
         });
         b18.setOnClickListener(new View.OnClickListener() {
@@ -315,25 +337,64 @@ public class MainActivity extends AppCompatActivity {
                     addition = addition + Integer.parseInt(tv1.getText().toString());
                     tv1.setText("");
                     tv1.setText(String.valueOf(addition));
+                    addition = 0;
+
                 }
                 if(task==1 && st==1)
                 {
                     sub = sub - (Integer.parseInt(tv1.getText().toString()));
                     tv1.setText("");
                     tv1.setText(String.valueOf(sub));
+                    sub = 0;
                 }
                 if(task==1 && mt==1)
                 {
                     multi = multi * (Integer.parseInt(tv1.getText().toString()));
                     tv1.setText("");
                     tv1.setText(String.valueOf(multi));
+                    multi = 1;
                 }
                 if(task==1 && dt==1)
                 {
                     div = div / (Integer.parseInt(tv1.getText().toString()));
                     tv1.setText("");
                     tv1.setText(String.valueOf(div));
+                    div=1;
                 }
+                if(task==1 && md==1)
+                {
+                    mod = mod%(Integer.parseInt(tv1.getText().toString()));
+                    tv1.setText("");
+                    tv1.setText(String.valueOf(mod));
+                    mod = 1;
+                }
+            }
+        });
+        b13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv1.setText("");
+                txt="";
+                bb1 = "";
+                bb2 = "";
+                bb3 = "";
+                bb4 = "";
+                bb5 = "";
+                bb6 = "";
+                bb7 = "";
+                bb8 = "";
+                bb9 = "";
+                bb0 = "";
+            }
+        });
+        b12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp = tv1.getText().toString();
+                String temp1 = temp.substring(0,temp.length()-1);
+                tv1.setText("");
+                tv1.setText(temp1);
+                txt = temp1;
             }
         });
     }
