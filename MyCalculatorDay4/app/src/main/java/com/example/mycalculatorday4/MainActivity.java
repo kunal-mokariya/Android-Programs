@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -78,11 +79,56 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+                if(bb1.length()>0)
                 {
                     bb1 = bb1+"1";
-                    txt = txt+bb1;
-                    tv1.setText(txt);
+                    tv1.setText(bb1);
+
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"1";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"1";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"1";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"1";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"1";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"1";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"1";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"1";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"1";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -95,26 +141,116 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"2";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
                 {
                     bb2 = bb2+"2";
-                    txt = txt+bb2;
-                    tv1.setText(txt);
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"2";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"2";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"2";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"2";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"2";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"2";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"2";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"2";
+                    tv1.setText(bb0);
                 }
                 else
                 {
                     txt = txt + "2";
                     tv1.setText(txt);
                 }
+
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"3";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"3";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
                 {
                     bb3 = bb3+"3";
                     tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"3";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"3";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"3";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"3";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"3";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"3";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"3";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -126,10 +262,55 @@ public class MainActivity extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"4";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"4";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"4";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
                 {
                     bb4 = bb4+"4";
                     tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"4";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"4";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"4";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"4";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"4";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"4";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -141,10 +322,55 @@ public class MainActivity extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"5";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"5";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"5";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"5";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
                 {
                     bb5 = bb5+"5";
                     tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"5";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"5";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"5";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"5";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"5";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -156,10 +382,56 @@ public class MainActivity extends AppCompatActivity {
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"6";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"6";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"6";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"6";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"6";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
                 {
                     bb6 = bb6+"6";
                     tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"6";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"6";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"6";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"6";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -171,10 +443,56 @@ public class MainActivity extends AppCompatActivity {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"7";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"7";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"7";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"7";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"7";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"7";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
                 {
                     bb7 = bb7+"7";
                     tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"7";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"7";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"7";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -186,10 +504,56 @@ public class MainActivity extends AppCompatActivity {
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"8";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"8";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"8";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"8";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"8";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"8";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"8";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
                 {
                     bb8 = bb8+"8";
                     tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"8";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"8";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -201,10 +565,56 @@ public class MainActivity extends AppCompatActivity {
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(task==1)
+
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"9";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"9";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"9";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"9";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"9";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"9";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"9";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"9";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
                 {
                     bb9 = bb9+"9";
                     tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
+                {
+                    bb0 = bb0+"9";
+                    tv1.setText(bb0);
                 }
                 else
                 {
@@ -217,7 +627,52 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(task==1)
+                if(bb1.length()>0)
+                {
+                    bb1 = bb1+"0";
+                    tv1.setText(bb1);
+                }
+                else if (bb2.length()>0)
+                {
+                    bb2 = bb2+"0";
+                    tv1.setText(bb2);
+                }
+                else if (bb3.length()>0)
+                {
+                    bb3 = bb3+"0";
+                    tv1.setText(bb3);
+                }
+                else if (bb4.length()>0)
+                {
+                    bb4 = bb4+"0";
+                    tv1.setText(bb4);
+                }
+                else if (bb5.length()>0)
+                {
+                    bb5 = bb5+"0";
+                    tv1.setText(bb5);
+                }
+                else if (bb6.length()>0)
+                {
+                    bb6 = bb6+"0";
+                    tv1.setText(bb6);
+                }
+                else if (bb7.length()>0)
+                {
+                    bb7 = bb7+"0";
+                    tv1.setText(bb7);
+                }
+                else if (bb8.length()>0)
+                {
+                    bb8 = bb8+"0";
+                    tv1.setText(bb8);
+                }
+                else if (bb9.length()>0)
+                {
+                    bb9 = bb9+"0";
+                    tv1.setText(bb9);
+                }
+                else if (bb0.length()>0)
                 {
                     bb0 = bb0+"0";
                     tv1.setText(bb0);
@@ -236,8 +691,9 @@ public class MainActivity extends AppCompatActivity {
                 mt = 0;
                 dt = 0;
                 md = 1;
-                mod = mod+ Integer.parseInt(tv1.getText().toString());
+                mod = (mod * Integer.parseInt(tv1.getText().toString()))/100;
                 tv1.setText("");
+                tv1.setText(String.valueOf(mod));
                 task = 1;
                 st = 0;
                 at = 0;
@@ -251,6 +707,8 @@ public class MainActivity extends AppCompatActivity {
                 bb8 = "";
                 bb9 = "";
                 bb0 = "";
+                txt = "";
+
             }
         });
         b14.setOnClickListener(new View.OnClickListener() {
@@ -259,7 +717,7 @@ public class MainActivity extends AppCompatActivity {
                 mt = 0;
                 dt = 1;
                 md = 0;
-                div = div+Integer.parseInt(tv1.getText().toString());
+                div = div /Integer.parseInt(tv1.getText().toString());
                 tv1.setText("");
                 task = 1;
                 st = 0;
@@ -274,6 +732,7 @@ public class MainActivity extends AppCompatActivity {
                 bb8 = "";
                 bb9 = "";
                 bb0 = "";
+                txt = "";
             }
         });
         b15.setOnClickListener(new View.OnClickListener() {
@@ -281,7 +740,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mt = 1;
                 dt = 0;
-                multi = multi+ Integer.parseInt(tv1.getText().toString());
+                multi = multi * Integer.parseInt(tv1.getText().toString());
                 tv1.setText("");
                 task = 1;
                 st = 0;
@@ -297,6 +756,8 @@ public class MainActivity extends AppCompatActivity {
                 bb8 = "";
                 bb9 = "";
                 bb0 = "";
+                txt = "";
+                //Toast.makeText(MainActivity.this, bb1+bb2, Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -307,11 +768,21 @@ public class MainActivity extends AppCompatActivity {
                 mt = 0;
                 dt = 0;
                 md = 0;
-                sub = sub+Integer.parseInt(tv1.getText().toString());
+                sub = sub-Integer.parseInt(tv1.getText().toString());
                 txt = "";
                 task = 1;
                 st = 1;
-
+                bb1 = "";
+                bb2 = "";
+                bb3 = "";
+                bb4 = "";
+                bb5 = "";
+                bb6 = "";
+                bb7 = "";
+                bb8 = "";
+                bb9 = "";
+                bb0 = "";
+                tv1.setText("");
             }
         });
         b17.setOnClickListener(new View.OnClickListener() {
@@ -322,10 +793,20 @@ public class MainActivity extends AppCompatActivity {
                 dt = 0;
                 md = 0;
                 addition = addition + Integer.parseInt(tv1.getText().toString());
+                tv1.setText("");
                 txt = "";
                 task = 1;
                 at = 1;
-
+                bb1 = "";
+                bb2 = "";
+                bb3 = "";
+                bb4 = "";
+                bb5 = "";
+                bb6 = "";
+                bb7 = "";
+                bb8 = "";
+                bb9 = "";
+                bb0 = "";
 
             }
         });
@@ -363,7 +844,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(task==1 && md==1)
                 {
-                    mod = mod%(Integer.parseInt(tv1.getText().toString()));
+                    mod = (mod*(Integer.parseInt(tv1.getText().toString())))/100;
                     tv1.setText("");
                     tv1.setText(String.valueOf(mod));
                     mod = 1;
